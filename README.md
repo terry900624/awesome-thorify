@@ -1,4 +1,4 @@
-# ThorifyTest
+# AwesomeThorify
 
 实现了基于thorify的ERC20 Token发布和一些主要的调用方法，仅供参考使用。
 
