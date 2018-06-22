@@ -7,6 +7,9 @@
     "build": "tsc -p ./",
     "deploy": "ts-node src/erc20/deploytoken.ts",
     "airdrop": "ts-node src/erc20/airdrop.ts",
+    "approve": "ts-node src/erc20/approve.ts",
+    "burn": "ts-node src/erc20/burn.ts",
+    "eventlog": "ts-node src/erc20/eventlog.ts",
     "test": ""
   },
   "author": "",
