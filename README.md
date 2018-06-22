@@ -4,7 +4,7 @@
 
 ## 安装
 
-首先需要本地安装Thor客户端，安装方式：[Thor传送门](https://github.com/vechain/thor). 
+首先需要本地安装Thor客户端，安装方式：[Thor传送门](https://github.com/vechain/thor). 
 
 ### 启动 Thor
 
