@@ -35,7 +35,7 @@ npm run approve
 
 销毁Token
 ```
-npm run approve
+npm run burn
 ```
 查看Transfer Log
 ```
