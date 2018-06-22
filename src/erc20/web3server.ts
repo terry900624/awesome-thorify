@@ -19,6 +19,9 @@ export class Web3Server {
         this.users.push(user);
         return user;
     }
+    async getBlock(revision:string|number){
+        return this.web3.eth.getBlock(revision);
+    }
     async getCode(addr: string) {
         return this.web3.eth.getCode(addr);
     }
