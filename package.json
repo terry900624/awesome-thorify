@@ -17,7 +17,7 @@
   "dependencies": {
     "bignumber.js": "^7.2.1",
     "ethereumjs-util": "^5.2.0",
-    "thorify": "^0.2.0",
+    "thorify": "^0.3.0",
     "ts-node": "^6.1.2",
     "typescript": "^2.9.2",
     "web3": "1.0.0-beta.34"
