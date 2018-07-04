@@ -1,43 +1,44 @@
 # AwesomeThorify
 
-实现了基于thorify的ERC20 Token发布和一些主要的调用方法，仅供参考使用。
+Realize ERC20-Token publishing and some major methods based on [thorify](https://github.com/vechain/thorify).Implemented for reference only.
 
-## 安装
+## Install
 
-首先需要本地安装Thor客户端，安装方式：[Thor传送门](https://github.com/vechain/thor). 
+First of all, thor client needs to be installed locally. To install thor:follow this [link](https://github.com/vechain/thor). 
 
-### 启动 Thor
+### Running Thor
 
-使用solo方式启动，里面会有10个初始测试账号供测试使用
+Start with solo mode,there will be 10 initial accounts for test.
 
 ```
 bin/thor solo
 ```
 
-### 下载本项目并安装依赖
+### Download this project and install the dependencies
 
-## 测试
+## Test
 
-发布ERC20 Token合约
+Deploy ERC20-Token
 ```
 npm run deploy
 ```
 
-空投Token
+Airdrop token
 ```
 npm run airdrop
 ```
 
-授权Token并使用
+Approve token and spend
 ```
 npm run approve
 ```
 
-销毁Token
+Burn token
 ```
 npm run burn
 ```
-查看Transfer Log
+
+Get transfer log
 ```
 npm run eventlog
 ```
