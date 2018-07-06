@@ -9,7 +9,7 @@ const ethUtil = require('ethereumjs-util')
 export let web3server = new Web3Server(Config.web3Host);
 
 //run `npm run deploy` to generate deploy.json
-export let getTokenAddr = async ():Promise<string> => {
+export let getPrototpyeShoppingAddr = async ():Promise<string> => {
     let deployJSON:string = fs.readFileSync(path.join(__dirname, './deploy.json'), {
         encoding: 'utf-8'
     });
@@ -25,15 +25,15 @@ export let addressFromPriv = (privKey: string):string => {
     return '0x' + ethUtil.privateToAddress(new Buffer(privKey, 'hex')).toString('hex')
 }   
 
-export let getTokenABI = async () => {
-    let abi = fs.readFileSync(path.join(__dirname, '../sol/erc20.abi'), {
+export let getPrototpyeShoppingABI = async () => {
+    let abi = fs.readFileSync(path.join(__dirname, '../sol/prototypeshopping.abi'), {
         encoding: 'utf-8'
     });
     return JSON.parse(abi);
 }
 
-export let getTokenCode = async () => {
-    let code = fs.readFileSync(path.join(__dirname, '../sol/erc20.bytecode'), {
+export let getPrototpyeShoppingCode = async () => {
+    let code = fs.readFileSync(path.join(__dirname, '../sol/prototypeshopping.bytecode'), {
         encoding: 'utf-8'
     });
     return code;
@@ -45,8 +45,12 @@ export let saveDeployResult = async (result) => {
     })
 }
 
-export let getTokenContract = async() => {
-    const tokenAddr = await getTokenAddr();
-	const tokenABI = await getTokenABI();
-	return web3server.Contract(tokenABI, tokenAddr);
+export let getPrototypeShoppingContract = async() => {
+    const prototypeShoppingAddr = await getPrototpyeShoppingAddr();
+    const prototypeShoppingABI = await getPrototpyeShoppingABI();
+	return web3server.Contract(prototypeShoppingABI, prototypeShoppingAddr);
+}
+
+export let getEnergyContract = async() => {
+	return web3server.Contract(Config.energyABI, Config.energyAddress);
 }
