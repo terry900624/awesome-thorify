@@ -1,6 +1,6 @@
 # AwesomeThorify
 
-Realize ERC20-Token publishing and some major methods about MPP based on [thorify](https://github.com/vechain/thorify).Implemented for reference only.
+Realize ERC20-Token publishing and some major methods about Multi-Party Payment Protocol(MPP) based on [thorify](https://github.com/vechain/thorify).Implemented for reference only.
 
 ## Install
 
@@ -44,7 +44,7 @@ Get transfer log
 ```
 npm run erc20-eventlog
 ```
-### MPP
+### Multi-Party Payment Protocol(MPP)
 
 Deploy test shopping contract
 ```
